@@ -278,7 +278,9 @@ body:after {
     top: -5px;
     font-family: "Work Sans" !important;
     font-size: 30px;
-    font-weight: 900; }
+    /* TODO */
+    /**font-weight: 900; **/
+  }
     .site-navbar .site-logo a {
       text-transform: uppercase; }
   .site-navbar .site-navigation .site-menu {
@@ -1584,7 +1586,9 @@ body:after {
 .section-title {
   color: #007bff;
   font-size: 40px;
-  font-weight: 900; }
+  /* TODO */
+  /**font-weight: 900; **/
+}
   @media (max-width: 991.98px) {
     .section-title {
       font-size: 30px; } }
