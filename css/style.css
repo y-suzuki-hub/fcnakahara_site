@@ -2034,3 +2034,17 @@ figure figcaption {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+/* CUSTOM OPTION*/
+.team-photo-box{
+  position: relative;
+  width: 255px;
+  height: 255px;
+}
+.team-photo{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 255px;
+  height: auto;
+}
