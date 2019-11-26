@@ -2041,10 +2041,20 @@ figure figcaption {
   width: 255px;
   height: 255px;
 }
+.team-photo-box2{
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
 .team-photo{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 255px;
   height: auto;
+}
+
+.card-result{
+  margin-top:-80px;
+  padding-top:80px;
 }
