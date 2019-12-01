@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <title>FC中原公式ウェブサイト</title>
@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="css/jquery-ui.css">
 
   <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!--
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  -->
 
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
@@ -49,7 +51,7 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0"><img src="images/logo001.png"
+            <h1 class="mb-1 site-logo"><a href="index.html" class="mb-1"><img src="images/logo001.png"
                   height="50px">FC中原</a></h1>
           </div>
 
@@ -57,7 +59,7 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="has-children">
-                  <a href="#about-section" class="nav-link">チーム</a>
+                  <a href="#team-concepts" class="nav-link">チーム</a>
                   <ul class="dropdown">
                     <li><a href="#team-concepts" class="nav-link">FC中原とは </a></li>
                     <li><a href="#team-description" class="nav-link">活動内容</a></li>
@@ -65,7 +67,7 @@
                 </li>
 
                 <li class="has-children">
-                  <a href="#about-section" class="nav-link">入部案内</a>
+                  <a href="#team-join" class="nav-link">入部案内</a>
                   <ul class="dropdown">
                     <li><a href="#team-join" class="nav-link">入部を希望される方へ</a></li>
                     <li><a href="#team-trial" class="nav-link">体験入部</a></li>
@@ -74,7 +76,7 @@
 
                 <li><a href="#team-schedule" class="nav-link">スケジュール</a></li>
                 <li class="has-children">
-                  <a href="#result">主な戦績</a>
+                  <a href="#team-result">主な戦績</a>
                   <ul class="dropdown">
                     <li><a href="#result_6">６年生</a></li>
                     <li><a href="#result_5">５年生</a></li>
@@ -113,7 +115,7 @@
             <h1 class="text-uppercase mb-5" data-aos="fade-up">Football Club<br>Nakahara</h1>
 
             <div data-aos="fade-up" data-aos-delay="100">
-              <a href="#top" class="btn smoothscroll btn-primary mr-2 mb-2">Get In Touch</a>
+              <a href="#team-schedule" class="btn smoothscroll btn-primary mr-2 mb-2">スケジュール</a>
             </div>
           </div>
         </div>
@@ -240,7 +242,7 @@
     </section>
 
     <!-- 入部に関して -->
-    <div class="site-section cta-big-image" id="team-join">
+    <section class="site-section border-bottom" id="team-join">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center" data-aos="fade">
@@ -270,10 +272,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- 体験入部の説明 -->
-    <section class="site-section" id="team-trial">
+    <section class="site-section border-bottom bg-light" id="team-trial">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-8 text-center">
@@ -296,7 +298,8 @@
             <div class="row">
               <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="">
                 <div class="unit-4">
-                  <div class="unit-4-icon mr-4 mb-3"><span class="text-primary flaticon-head"></span></div>
+                  <div class="unit-4-icon mr-4 mb-3">
+                      <span class="text-primary"><img src="fonts/flaticon/substitution.png"></span></div>
                   <div>
                     <h3>体験入部への申込み</h3>
                     <p>
@@ -307,13 +310,14 @@
                       <li>通学先（小学校）</li>
                       <li>質問事項</li>
                     </ul>
-                    <p><a href="#contact-section" class="smoothscroll btn btn-primary">申込フォーム</a></p>
+                    <p><a href="#contact-section" class="smoothscroll btn btn-primary">お問い合わせ</a></p>
                   </div>
                 </div>
               </div>
               <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="unit-4">
-                  <div class="unit-4-icon mr-4 mb-3"><span class="text-primary flaticon-smartphone"></span></div>
+                  <div class="unit-4-icon mr-4 mb-3">
+                      <span class="text-primary"><img src="fonts/flaticon/cap.png"></span></div>
                   <div>
                     <h3>当日用意するもの</h3>
                     <p>持ち物は以下です。気をつけてお越しください。</p>
@@ -373,7 +377,7 @@
 
 
     <!-- 主な戦績 -->
-    <section class="site-section border-bottom" id="team-section">
+    <section class="site-section border-bottom bg-light" id="team-result">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-8 text-center">
@@ -581,7 +585,7 @@
 
 
     <!-- 問い合わせフォーム -->
-    <section class="site-section bg-light" id="contact-section" data-aos="fade">
+    <section class="site-section border-bottom" id="contact-section" data-aos="fade">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -669,16 +673,17 @@
                 <p>神奈川県川崎市中原区で活動している川崎市サッカー協会第4種少年委員会登録チームです。</p>
               </div>
               <div class="col-md-3 ml-auto">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <h2 class="footer-heading mb-4">ページ内リンク</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#about-section" class="smoothscroll">About Us</a></li>
-                  <li><a href="#services-section" class="smoothscroll">Services</a></li>
-                  <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
-                  <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                  <li><a href="#tema-concepts" class="smoothscroll">チーム</a></li>
+                  <li><a href="#team-join" class="smoothscroll">入部案内</a></li>
+                  <li><a href="#team-schedule" class="smoothscroll">スケジュール</a></li>
+                  <li><a href="#team-result" class="smoothscroll">主な戦績</a></li>
+                  <li><a href="#contact-section" class="smoothscroll">お問い合わせ</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <h2 class="footer-heading mb-4">情報発信（SNS）</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
@@ -737,7 +742,9 @@
 
   <script src="js/main.js"></script>
 
-
+<!--
+  Soccer Icon https://www.flaticon.com/packs/soccer-67
+-->
 
 </body>
 
