@@ -778,7 +778,6 @@ body:after {
 .section-title {
   color: #307ab0;
   font-size: 40px;
-  /* TODO */
   /**font-weight: 900; **/
 }
   @media (max-width: 991.98px) {
@@ -989,6 +988,13 @@ a{
 
 .footer-sns-title{
   margin-left: 5px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal !important;
+}
+
+.top-image-text{
+  font-weight: bold !important;
 }
 
 #page_top{
