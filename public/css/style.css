@@ -997,6 +997,10 @@ h1,h2,h3,h4,h5,h6{
   font-weight: bold !important;
 }
 
+.logo-title{
+  margin-left: 5px;
+}
+
 #page_top{
   width: 90px;
   height: 90px;
