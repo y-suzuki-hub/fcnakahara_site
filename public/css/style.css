@@ -973,6 +973,12 @@ body:after {
   margin-top:-80px;
   padding-top:80px;
 }
+.card-footer-title{
+  text-align: right;
+}
+@media (max-width: 991.98px) {
+  .card-footer-title {
+    text-align: left; } }
 
 .card-header h3{
   color: #307ab0;
