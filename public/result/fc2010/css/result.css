@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/* ##### fc nakahara 2006 result用 ##### */
+
+/* ##### 共通初期化 ##### */
+
+div {
+  margin:0px;
+  padding:0px;
+}
+p {
+  margin:0px;
+  padding:0px;
+}
+form {
+  margin:0px;
+  padding:0px;
+}
+h1,h2,h3,h4,h5,h6,h7 {
+  margin:0px;
+  padding:0px;
+}
+body {
+  margin:0px; padding:0px; text-align:center; 
+//  background-image: url("../img/934864.png");
+  background-image: url("../img/550842.png");
+//  background-size:100%;
+}
+body,div,td,th { font-size:12px; line-height:20px; }
+
+img{ border:0; }
+
+ul, ol, li, dl, dt, dd {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+a:link { color:#0033ff; text-decoration:underline; }
+a:visited { color:#0033ff; text-decoration:underline; }
+a:hover { color:#3399ff; text-decoration:underline; }
+a:active { color:#3399ff; text-decoration:underline; }
+
+
+/* ##### 共有ハック ##### */
+.pc_only {
+  
+}
+.clearfix {
+  border-right:none;
+  border-left:none;
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix{
+	display: inline-block;
+}
+/* Hides from ie-mac \*/
+* html .clearfix { height:1%; }
+.clearfix { display: block; }
+/* End hide from ie-mac */
+
+.clearboth { clear:both; }
+
+
+
+/* ##### 共通レイアウト ##### */
+div#wrapper {
+	width:800px;
+	margin:0 auto;
+	text-align:left;
+	border:#aaa 1px solid;
+	border-top:none;
+	border-bottom:none;
+	box-shadow:0 -5px 10px 0 #fff;
+}
+.header-image {
+  overflow:hidden;
+}
+.header-image img {
+  width:800px;
+}
+
+h1.resultTtl {
+//	background:#f2f6f8;
+	background:#fff;
+	padding:15px 0 5px 0;
+	text-align:center;
+	font-size:18px;
+//	color:#307AB0;
+	color:#444;
+//	border:#307AB0 2px solid;
+//	border:#aaa 1px solid;
+//	border-top:none;
+//	margin-bottom:18px;
+}
+
+.resultTable {
+    background:#ccc;
+    width:798px;
+    border:none;
+}
+.resultTable tr:nth-child(odd) {
+  background-color: #fdffd9;
+}
+.resultTable tr:nth-child(even) {
+  background-color: #fff;
+}
+.resultTable th {
+    background:#57b8ff;
+    color:#FFF;
+    font-weight:bold;
+    text-align:center;
+    white-space:nowrap;
+    font-size:15px;
+}
+.resultTable td {
+//    background:#f2f6f8;
+//    background:#fff;
+    text-align:center;
+    color:#222;
+    font-size:15px;
+}
+.result_comment {
+    text-align:left;
+    padding:5px;
+    background-color:#fff;
+}
+.result_comment:before {
+    content: '【コメント】\a';
+    white-space: pre;
+}
+
+dl.resultBox {
+	width:800px;
+//	margin-bottom:20px;
+}
+dl.resultBox dt {
+//	background:#307AB0;
+	background:#055e9d;
+	color:#FFF;
+//	font-weight:bold;
+//	border:#ccc 2px solid;
+//	border-bottom:none;
+	border-bottom:solid 1px #eee;
+	padding:6px 4px;
+}
+dl.resultBox dt span {
+	display:block;
+	float:left;
+	color:inherit;
+	font-weight:inherit;
+	font-size:15px;
+	overflow:hidden;
+}
+dl.resultBox dt span.resultDate {
+	width:110px;
+	text-align:center;
+}
+dl.resultBox dt span.resultName {
+	width:440px;
+}
+dl.resultBox dt span.resultSubTotal {
+	width:120px;
+	text-align:center;
+}
+dl.resultBox dt a {
+	display:block;
+	float:right;
+	width:80px;
+	color:#FF3;
+	font-weight:bold;
+	font-size:13px;
+	text-align:center;
+//	text-decoration:none;
+}
+dl.resultBox dt a:link { color:#FF3; text-decoration:underline; }
+dl.resultBox dt a:visited { color:#FF3; text-decoration:underline; }
+dl.resultBox dt a:hover { color:#FF0; text-decoration:underline; }
+dl.resultBox dt a:active { color:#FF0; text-decoration:underline; }
+dl.resultBox dd {
+	display:none;
+	border:#ccc 1px solid;
+	border-bottom:none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  body {
+    background-image:none;
+    background:#fff;
+  }
+  .pc_only {
+    display:none;
+  }
+  
+  div#wrapper {
+    width:100%;
+  }
+  .header-image {
+    width:100%;
+  }
+  .header-image img {
+    width:100%;
+  }
+  dl.resultBox {
+    width:100%;
+  }
+  dl.resultBox dt span.resultName {
+    width:calc(100% - 240px);
+    overflow:hidden;
+  }
+  dl.resultBox dt a {
+    display:none;
+  }
+}
