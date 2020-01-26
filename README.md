@@ -5,7 +5,9 @@
 
 # 構成
 
-基本的に、htmlはpublic/index.html の１ページです。cssはBootstrapをベースにしており、無料テンプレート（oneoder/）を改良して作っています。
+基本的に、[index.html](public/index.html) の１ページです。
+
+cssはBootstrapをベースにしており、無料テンプレート（oneoder/）を改良して作っています。
 
 index.htmlに含まれているリンクは、主に
 
@@ -20,10 +22,10 @@ index.htmlに含まれているリンクは、主に
 
 # 運用サーバ
 
-サーバにはFirebase（https://firebase.google.com）の無料枠を利用しています。
+サーバには[Firebase](https://firebase.google.com)の無料枠を利用しています。
 
 リポジトリ内のファイルを変更すると、GitHub ActionというCIサービスが検知し、
-.github/workflows/firebase_deploy.yml
+[firebase_deploy.yml](.github/workflows/firebase_deploy.yml)
 に記載されているように、Firebaseのサーバのファイルを自動的に更新する設定になっています。
 
 # index.htmlの更新
