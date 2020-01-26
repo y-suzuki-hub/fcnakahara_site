@@ -49,4 +49,12 @@ FirebaseのCloudFunctionsを利用して、サーバレス構成で問い合わ�
 
 index.htmlから問い合わせボタンを押すと、メール送信関数（実際にはURL）が送信され、メール送信プログラムが動き、メールが送信される。
 
+# ドメインに関して
+
+[Firebaseでのドメイン設定方法](https://qiita.com/yacchi1123/items/963bdf12c9c4a7a8f67c)
+
+[お名前.com](https://www.onamae.com)
+
+fcnakahara.netもしくはfcnakahara.clubをお名前.comで購入し、firebaseに設定する（予定）。
+
 # 注意
