@@ -43,6 +43,100 @@ jQuery(document).ready(function ($) {
 
 		}, 1000);
 
+		// formのデータをjsonに変換して送る
+		$('form').submit(function () {
+			event.preventDefault(); // 本来のPOSTを打ち消すおまじない
+			var data = $('form').serializeArray();  // ①form to json
+			data = parseJson(data); // ②json to 欲しい形
+			// ③送信
+
+			
+			$.post("https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT",
+				data,
+				null
+			);
+			alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
+			location.reload();
+			//event.currentTarget();
+			/**
+			$.ajax({
+                type : 'post',
+                url : "https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT",
+				data: JSON.stringify(data),
+                contentType: 'application/json',
+                dataType : 'json',
+                scriptCharset: 'utf-8',
+                success : function(data) {
+
+                    // Success
+                    alert("success");
+                    alert(JSON.stringify(data));
+                    $("#response").html(JSON.stringify(data));
+                },
+                error : function(data) {
+
+                    // Error
+                    alert("error");
+                    alert(JSON.stringify(data));
+                    $("#response").html(JSON.stringify(data));
+				}
+			});
+			**/
+		});
+
+		var getGradeString = function (tag) {
+			var ret = "[その他]";
+			if (tag == "grade_1") {
+				ret = "[１年生]"
+			}
+			else if (tag == "grade_2") {
+				ret = "[２年生]"
+			}
+			else if (tag == "grade_3") {
+				ret = "[３年生]"
+			}
+			else if (tag == "grade_4") {
+				ret = "[４年生]"
+			}
+			else if (tag == "grade_5") {
+				ret = "[５年生]"
+			}
+			else if (tag == "grade_6") {
+				ret = "[６年生]"
+			}
+			else if (tag == "grade_kids") {
+				ret = "[キッズ]"
+			}
+			else if (tag == "grade_girls") {
+				ret = "[少女]"
+			}
+			return ret;
+		}
+		  
+		// ②変換関数：json to 欲しい形
+		var parseJson = function(data) {
+			var returnJson = {};
+			returnJson["value1"] = `${data[0].value}(${data[1].value})`;
+			returnJson["value2"] = `${getGradeString(data[3].value)}${data[2].value}`;
+			returnJson["value3"] = `${data[4].value}`;
+			/**
+			var idx = 0;
+			for (idx = 0; idx < data.length; idx++) {
+				console.log(data[idx])
+				returnJson[data[idx].name] = data[idx].value
+			}
+			
+			 * 0: {name: "name", value: "なまえ"}
+				1: {name: "email", value: "mail@gmail.com"}
+				2: {name: "subject", value: "たいとる"}
+				3: {name: "grade", value: "grade_1"}
+				4: {name: "message", value: "本文"}
+				length: 5
+				__proto__: Array(0) 
+			 **/
+			return returnJson;
+		}
+
 		$('body').on('click', '.arrow-collapse', function (e) {
 			var $this = $(this);
 			if ($this.closest('li').find('.collapse').hasClass('show')) {
