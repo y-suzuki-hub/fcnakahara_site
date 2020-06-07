@@ -958,15 +958,15 @@ body:after {
 /* CUSTOM OPTION*/
 .team-photo-box{
   position: relative;
-  width: 200px;
-  height: 150px;
+  width: auto;
+  height: 300px;
 }
 .team-photo{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 300px;
 }
 
 .card-result{
