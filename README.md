@@ -55,6 +55,6 @@ index.htmlから問い合わせボタンを押すと、メール送信関数（�
 
 [お名前.com](https://www.onamae.com)
 
-fcnakahara.netもしくはfcnakahara.clubをお名前.comで購入し、firebaseに設定する（予定）。
+fcnakahara.netをお名前.comで購入し、firebaseに設定済み。
 
 # 注意
