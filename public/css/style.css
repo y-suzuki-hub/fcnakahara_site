@@ -1015,6 +1015,9 @@ h1,h2,h3,h4,h5,h6{
   right: 0;
   bottom: 50px;
   opacity: 0.6;
+  border-radius: 50%;
+  background: #ffffff;
+  border-radius: 15px;
 }
 #page_top a{
   position: relative;
